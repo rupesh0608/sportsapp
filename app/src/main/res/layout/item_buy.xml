@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#171717"
+    android:layout_marginVertical="2dp"
+    android:paddingHorizontal="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_right"
+                android:paddingEnd="10dp"
+                tools:ignore="RtlSymmetry">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/lg1"/>
+                <TextView
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Guniea"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textFontWeight="500"/>
+                <TextView
+                    android:layout_weight="0.5"
+                    android:gravity="end|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="16-12"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:alpha="0.4"
+                    android:textFontWeight="400"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_right"
+                android:paddingEnd="10dp">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/lg1"/>
+                <TextView
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mumbai City FC"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textFontWeight="500"/>
+                <TextView
+                    android:layout_weight="0.5"
+                    android:gravity="end|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="16-10"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:alpha="0.4"
+                    android:textFontWeight="400"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:paddingVertical="10dp"
+            android:paddingStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tue,2/10"
+                android:paddingVertical="2dp"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="8:30 AM"
+                android:paddingVertical="2dp"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btnType"
+        android:layout_alignBottom="@+id/layout"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/buy_sell_bg_box"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textFontWeight="500"
+        android:text="BUY"/>
+</RelativeLayout>

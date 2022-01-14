@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="15dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="24/12/2021"
+        android:textColor="#9DA3AE"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="10dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/blue_corner_radius_box"
+        android:text="What does Split Participant mean in a double elimination bracket?"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textFontWeight="500"
+        android:padding="10dp"
+        android:lineHeight="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6:00 PM"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:textFontWeight="500"
+        android:lineHeight="20sp"
+        android:textAlignment="textEnd"
+        />
+
+
+
+</LinearLayout>

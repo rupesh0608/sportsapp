@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dark_black"
+    android:orientation="vertical"
+    tools:context=".ForgotPasswordActivity">
+
+    <ImageView
+        android:id="@+id/btnCross"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="20dp"
+        android:src="@drawable/ic_cross" />
+
+
+    <ImageView
+        android:id="@+id/running"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/football_bg" />
+
+    <ImageView
+        android:id="@+id/corner_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.4"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/login_corner_circle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/corner_radius_box"
+        android:orientation="vertical"
+        android:paddingHorizontal="29dp"
+        android:paddingTop="29dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"
+            android:text="Enter your email address in order to reset your password"
+            android:textColor="@color/white"
+            android:textFontWeight="400"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Email"
+                android:textColor="@color/white"
+                android:textFontWeight="400"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/border_set"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_email" />
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:id="@+id/edtEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Enter Email.."
+                    android:paddingHorizontal="12dp"
+                    android:textColorHint="@color/white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:backgroundTint="@color/light_blue"
+                android:padding="16dp"
+                android:text="send"
+                android:textAllCaps="false"
+                android:textFontWeight="700"
+                android:textSize="16sp"
+                app:cornerRadius="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

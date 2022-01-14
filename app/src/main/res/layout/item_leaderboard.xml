@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_black"
+    android:padding="5dp"
+    android:alpha="0.7"
+    android:layout_marginHorizontal="1dp"
+    android:layout_marginVertical="0.5dp"
+    android:orientation="horizontal">
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:elevation="10dp"-->
+<!--        app:cardCornerRadius="50dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/v1" />-->
+<!--    </androidx.cardview.widget.CardView>-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profilePic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/v1"/>
+    <TextView
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jasse Palmer"
+        android:paddingHorizontal="20dp"
+        android:textFontWeight="500"
+        android:textSize="17sp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13-11"
+        android:paddingHorizontal="10dp"
+        android:textFontWeight="500"
+        android:textSize="13sp"
+        android:alpha="0.7"
+        android:textColor="@color/white"/>
+    <TextView
+        android:gravity="end"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="97%"
+        android:paddingHorizontal="10dp"
+        android:textFontWeight="500"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+</LinearLayout>

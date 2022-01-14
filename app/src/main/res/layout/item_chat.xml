@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@drawable/border_set"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#080808"
+        android:alpha="0.8"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            app:cardCornerRadius="50dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:elevation="10dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/v1"-->
+<!--                />-->
+<!--        </androidx.cardview.widget.CardView>-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/profilePic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/v1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Alec Whitten"
+                    android:layout_marginTop="3dp"
+                    android:textSize="16sp"
+                    android:textFontWeight="700"/>
+                <TextView
+                    android:layout_gravity="top"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:alpha="0.8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="24/11/2019"
+                    android:textSize="12sp"
+                    android:textFontWeight="400"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingHorizontal="1dp"
+                android:alpha="0.6"
+                android:text="Hey Welcome to the Feature community! If you ever have a quest... "
+                android:textFontWeight="500"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

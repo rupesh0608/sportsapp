@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_black"
+    tools:context=".MainActivityFragments.NewPostActivity">
+
+    <ImageView
+        android:id="@+id/corner_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/login_corner_circle" />
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_gravity="center_vertical"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/ic_cross"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:text="New Post"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="18dp" />
+        <ImageView
+            android:id="@+id/btnFront"
+            android:layout_gravity="center_vertical"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginHorizontal="25dp"
+            android:src="@drawable/ic_arrow_right_blue"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/imageLayout"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginVertical="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/mainImageView"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageLayout"
+        android:background="@color/light_black"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0.9"
+            android:text="Gallery"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/btnCamera"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:alpha="0.9"
+            android:src="@drawable/ic_camera_circle" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bottomLayout"
+        app:spanCount="3"
+        android:background="@color/black"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/item_gallery" />
+
+</RelativeLayout>

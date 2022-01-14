@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment.ChatFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:gravity="center|right">
+
+            <EditText
+                android:id="@+id/editMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/searchbar"
+                android:drawableLeft="@drawable/ic_search"
+                android:ems="10"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:alpha="0.6"
+                android:textColorHint="#B0FFFFFF"
+                android:gravity="start"
+                android:drawablePadding="15dp"
+                android:hint="Search"></EditText>
+
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_chat" />
+    </RelativeLayout>
+</FrameLayout>
